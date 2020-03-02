@@ -20,7 +20,7 @@ class PostDetailView(DetailView):
 
 class IndexView(ListView):
     model = Post
-    template_name = 'blog/index_html'
+    template_name = 'blog/index.html'
 
 
 class CategoryListView(ListView):
