@@ -22,9 +22,10 @@ class Tag(models.Model):
 
 class Post(models.Model):
     category = models.ForeignKey(Category, on_delete=models.PROTECT)
-    tag = models.ManyToManyField(Tag, blank=True)
-    content = models.CharField(max_length=255)
-    desctiption = models.TextField()
+    tags = models.ManyToManyField(Tag, blank=True)
+    title = models.CharField(max_length=255)
+    content = models.TextField()
+    description = models.TextField(blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     published_at = models.DateTimeField(blank=True, null=True)
