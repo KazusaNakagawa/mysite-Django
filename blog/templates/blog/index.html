@@ -1,6 +1,12 @@
 <!-- blog/index.html -->
+{% extends "base.html" %}
 {% load static %}
 
+
+{% block title %}投稿一覧 | {{ block.super }}{% endblock %}
+{% block description %}マイブログです。毎日更新します。{% endblock %}
+
+{% block content %}
 <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
 <link rel="icon" href="{% static 'blog/img/favicon.ico' %}">
 <h1>投稿一覧</h1>
@@ -21,3 +27,5 @@
     <li>まだ投稿はありません。</li>
     {% endfor %}
 </ul>
+{% endblock %}
+
