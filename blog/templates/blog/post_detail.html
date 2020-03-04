@@ -1,10 +1,16 @@
-<!-- blog/post_detail.html -->
+{% extends "base.html" %}
+{% load static %}
 
-<h1>{{ object.title }}</h1>
-<p>{{ object.published_at|date }}</p>
-<p>{{ object.category.name }}</p>
-{% for tag in object.tags.all %}
-{{ tag.name }}
-{% endfor %}
-<hr>
-{{ object.content|safe }}
+{% block content %}
+<link rel="stylesheet" href="{% static 'blog/css/post_detail.css' %}">
+<div class="container">
+    <h1>{{ object.title }}</h1>
+    <p>{{ object.published_at|date }}</p>
+    <p>{{ object.category.name }}</p>
+    {% for tag in object.tags.all %}
+    {{ tag.name }}
+    {% endfor %}
+    <hr>
+    {{ object.content|safe }}
+</div>
+{% endblock %}
