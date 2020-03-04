@@ -1,0 +1,61 @@
+/*@media print, screen and (min-width: 960px)*/
+/*.post h4 {
+    background-color: #ffffff;
+    font-size: 16px;
+    line-height: 26px;
+    border-left: 9px solid #5fa0da78;
+    margin-top: 3.5em;
+}*/
+
+* {
+    font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", Hiragino Kaku Gothic Pro, "ＭＳ Ｐゴシック", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+entry-title, .post .entry-title {
+    font-size: 22px;
+    line-height: 35px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.post h2, .post h2 span, .post h3, .post h3 span, .entry-title, .post .entry-title {
+    font-family: Helvetica , "游ゴシック" , "Yu Gothic" , sans-serif;
+}
+
+/*@media print, screen and (min-width: 960px)*/
+h2.has-text-align-center {
+    background: #f7f7f7;
+    padding: 20px 15px 18px;
+    color: #333;
+    border-left: 9px solid #81b5e478;
+    line-height: 40px;
+}
+/*@media print, screen and (min-width: 960px)*/
+h3.has-text-align-center {
+    font-size: 20px;
+    line-height: 30px;
+    border-left: 9px solid #81b5e478;
+    margin-top: 3.5em;
+}
+
+h4.has-text-align-center {
+    background-color: #ffffff;
+    font-size: 16px;
+    line-height: 26px;
+    border-left: 9px solid #5fa0da78;
+    margin-top: 3.5em;
+}
+
+/*@media print, screen and (min-width: 960px)*/
+h5.has-text-align-center {
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
