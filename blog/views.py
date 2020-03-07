@@ -79,7 +79,7 @@ class SearchPostView(ListView):
                 Q(title__icontains=query) |
                 Q(content__icontains=query) |
                 Q(category__name__icontains=query) |
-                Q(tags__name__icontains=query)  # ここのtags を　tag にしてerror中々気づかなかった
+                Q(tags__name__icontains=query)
         )
         if query is not None:
             qs = super().get_queryset().filter(lookups).distinct()
