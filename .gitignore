@@ -1,5 +1,9 @@
 # Pipfile.look
 Pipfile.lock
 
+### Django  ###
+db.sqlite3
+staticfiles/
+
 # python run file
 *.pyc
