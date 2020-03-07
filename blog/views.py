@@ -1,12 +1,13 @@
+from django.contrib.auth.decorators import login_required
 from django.db.models import Count, Q
 from django.http import Http404
-from django.shortcuts import get_object_or_404
+from django.shortcuts import get_object_or_404, redirect
 from django.views.generic.detail import DetailView
+from django.views.generic.edit import CreateView
 from django.views.generic.list import ListView
 
-from blog.models import Category
-from blog.models import Post
-from blog.models import Tag
+from blog.forms import CommentForm, ReplyForm
+from blog.models import Category, Comment, Post, Reply, Tag
 
 
 class PostDetailView(DetailView):
@@ -92,3 +93,67 @@ class SearchPostView(ListView):
         query = self.request.GET.get('q')
         context['query'] = query
         return context
+
+
+class CommentFormView(CreateView):
+    model = Comment
+    form_class = CommentForm
+
+    def form_valid(self, form):
+        comment = form.save(commit=False)
+        post_pk = self.kwargs['pk']
+        comment.post = get_object_or_404(Post, pk=post_pk)
+        comment.save()
+        return redirect('blog:post_detail', pk=post_pk)
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        post_pk = self.kwargs['pk']
+        context['post'] = get_object_or_404(Post, pk=post_pk)
+        return context
+
+
+@login_required
+def comment_approve(request, pk):
+    comment = get_object_or_404(Comment, pk=pk)
+    comment.approve()
+    return redirect('blog:post_detail', pk=comment.post.pk)
+
+
+@login_required
+def comment_remove(request, pk):
+    comment = get_object_or_404(Comment, pk=pk)
+    comment.delete()
+    return redirect('blog:post_detail', pk=comment.post.pk)
+
+
+class ReplyFormView(CreateView):
+    model = Reply
+    form_class = ReplyForm
+
+    def form_valid(self, form):
+        reply = form.save(commit=False)
+        comment_pk = self.kwargs['pk']
+        reply.comment = get_object_or_404(Comment, pk=comment_pk)
+        reply.save()
+        return redirect('blog:post_detail', pk=reply.comment.post.pk)
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        comment_pk = self.kwargs['pk']
+        context['comment'] = get_object_or_404(Comment, pk=comment_pk)
+        return context
+
+
+@login_required
+def reply_approve(request, pk):
+    reply = get_object_or_404(Reply, pk=pk)
+    reply.approve()
+    return redirect('blog:post_detail', pk=reply.comment.post.pk)
+
+
+@login_required
+def reply_remove(request, pk):
+    reply = get_object_or_404(Reply, pk=pk)
+    reply.delete()
+    return redirect('blog:post_detail', pk=reply.comment.post.pk)
