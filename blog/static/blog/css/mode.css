@@ -2,6 +2,9 @@
   --main-text: #333;
   --main-bg: #fff;
 }
+/******************************
+変数宣言している
+******************************/
 @media (prefers-color-scheme: dark) {
   :root {
     --main-text: #ddd;
@@ -19,9 +22,15 @@ body {
   color: #333;
 }
 .dark-theme {
-  background: #000;
+  background: #15202B;
   color: #ddd
 }
+
+}
+.form-control {
+    background-color: #212020;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 .wrap {
   text-align: center;
@@ -48,4 +57,16 @@ a {
   display: inline-block;
   color: #fff;
   text-decoration: none;
+}
+
+.card-body, .bg-light   {
+  background-color: #3C3D34;
+  color: #E8E8E8;
+}
+
+/******************************
+　Toggle dark theme button
+******************************/
+.dark-theme-bottom {
+  margin: 0.5rem 0.5rem 0rem 0.5rem;
 }
