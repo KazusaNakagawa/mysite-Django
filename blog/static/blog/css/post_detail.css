@@ -27,10 +27,8 @@ entry-title, .post .entry-title {
 
 /*@media print, screen and (min-width: 960px)*/
 h2.has-text-align-center {
-    background: #f7f7f7;
-    padding: 20px 15px 18px;
-    color: #333;
-    border-left: 9px solid #81b5e478;
+    padding: 30px 15px 5px;
+    /*border-left: 9px solid #81b5e478;*/
     line-height: 40px;
 }
 /*@media print, screen and (min-width: 960px)*/
