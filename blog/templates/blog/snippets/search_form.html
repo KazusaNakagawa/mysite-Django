@@ -1,10 +1,5 @@
-<div class="color-mode">
-    <input id="btn-mode" type="checkbox" value="checked">
-    <label for="btn-mode" class="btn-switch">
-        <img class="dark-theme-bottom" alt="moon" src="/static/blog/img/moon.ico">
-    </label>
-</div>
-<form class="form-inline my-2 my-lg-0" action="{% url 'blog:search_post' %}" method="GET">
+{% load static %}
+<form class="form-inline my-3 my-lg-0 my-search" action="{% url 'blog:search_post' %}" method="GET">
     <input class="form-control mr-sm-2" type="search" name="q" value="{{ request.GET.q }}" placeholder="Search"
            aria-label="Search">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">検索</button>

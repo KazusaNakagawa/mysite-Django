@@ -6,21 +6,19 @@
         <img src="{% static '/blog/img/moon.ico' %}" title="My blog">
       </h1>
     </a>
-
     <div class="menu-button">
       <svg>
         <use xlink:href="#btn-menu"></use>
       </svg>
       メニュー
     </div>
-
     <div class="flexnav">
       <div class="color-mode">
         <p>ダークモード</p>
         <input id="btn-mode" type="checkbox">
         <label for="btn-mode" class="btn-switch"></label>
+        {% include "blog/snippets/search_form.html" %}
       </div>
-
       <nav role="navigation">
         <ul>
           <li id="menu-item-11569"
@@ -99,7 +97,6 @@
           <li><a href="https://www.webcreatorbox.com/en?s=" sl-processed="1">English</a></li>
         </ul>
       </nav>
-
       <div class="social-nav">
         <ul>
           <li>
@@ -128,7 +125,6 @@
           </li>
         </ul>
       </div><!-- /.social-nav -->
-
     </div><!-- /.flexnav -->
   </header>
 </div>
@@ -166,6 +162,5 @@
 <!--        <a class="nav-link disabled" href="#">Disabled</a>-->
 <!--      </li>-->
 <!--    </ul>-->
-<!--    {% include "blog/snippets/search_form.html" %}-->
 <!--  </div>-->
 <!--</nav>-->
