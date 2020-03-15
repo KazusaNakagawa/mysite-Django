@@ -1,6 +1,7 @@
 :root {
   --main-text: #333;
   --main-bg: #fff;
+  --dark-bg: #15202B;
 }
 /******************************
 変数宣言している
@@ -22,7 +23,7 @@ body {
   color: #333;
 }
 .dark-theme {
-  background: #15202B;
+  background: var(--dark-bg);
   color: #ddd
 }
 
@@ -59,10 +60,14 @@ a {
   text-decoration: none;
 }
 
-.card-body, .bg-light   {
-  background-color: #3C3D34;
+.card-body {
+  background-color: var(--dark-bg);
   color: #E8E8E8;
 }
+
+.card-header {
+  background-color: #3C3D34;
+  color: #E8E8E8;
 
 /******************************
 　Toggle dark theme button
@@ -70,3 +75,4 @@ a {
 .dark-theme-bottom {
   margin: 0.5rem 0.5rem 0rem 0.5rem;
 }
+
