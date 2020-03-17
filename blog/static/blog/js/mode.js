@@ -16,8 +16,8 @@ btn.addEventListener("change", () => {
 
 });
 
-// cookie保存
+// save cookie
 function setCookie() {
-  myCookieVal = $('body').hasClass('dark-theme')? 'dark-theme':'light-theme';
-  $.cookie('myCookieName', myCookieVal, { expires: 365, path: '/' })
+  themeName = $('body').hasClass('dark-theme')? 'dark-theme':'light-theme';
+  $.cookie('themeName', themeName, { expires: 365, path: '/' })
 }
