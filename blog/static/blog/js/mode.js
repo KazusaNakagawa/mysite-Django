@@ -18,10 +18,6 @@ btn.addEventListener("change", () => {
 
 // cookie保存
 function setCookie() {
-  myCookieVal = $('body').hasClass('dark-theme')? 'isActive':'notActive';
+  myCookieVal = $('body').hasClass('dark-theme')? 'dark-theme':'light-theme';
   $.cookie('myCookieName', myCookieVal, { expires: 365, path: '/' })
 }
-
-// Cookieから情報を読み込み
-var myCookieName = $.cookie("myCookieName");
-console.log(myCookieName);
