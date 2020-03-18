@@ -199,12 +199,12 @@ img {
 }
 #side section>h1 {
   /*background:url(images/sprite.svg) no-repeat;background-size:302px 900px;*/
-  background: #6c757d;
+  border-bottom: 3px #0bd solid;
   background-position:0 -300px;
   font-family:'LTG';
   font-size:1.125rem;
   line-height:1.4;
-  color:#fff;
+  /*color:#fff;*/
   text-align:center;
   max-width:101%;
   width:302px;
