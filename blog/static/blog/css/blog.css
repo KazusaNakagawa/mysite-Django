@@ -15,3 +15,9 @@
 * {
     font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", Hiragino Kaku Gothic Pro, "ＭＳ Ｐゴシック", sans-serif;
 }
+/***********************
+ main
+***********************/
+.main-top {
+  margin-top: 2rem;
+}

@@ -6,6 +6,10 @@
     border-left: 9px solid #5fa0da78;
     margin-top: 3.5em;
 }*/
+/* title */
+.post-title {
+  margin-top: 2rem;
+}
 
 * {
     font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", Hiragino Kaku Gothic Pro, "ＭＳ Ｐゴシック", sans-serif;
