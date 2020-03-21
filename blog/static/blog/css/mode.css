@@ -20,14 +20,24 @@ body {
 }
 .light-theme {
   background: #fff;
-  color: #333;
+  color: var(--main-text);
 }
 .dark-theme {
   background: var(--dark-bg);
   color: #ddd
 }
-
+/******************************
+　　検索
+******************************/
+.dark-theme .search {
+  background: #575858;
+  color: var(--main-text);
+  border: none
 }
+
+
+
+
 .form-control {
     background-color: #212020;
 }
