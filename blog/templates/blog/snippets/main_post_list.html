@@ -21,7 +21,7 @@
         <a href="{% url 'blog:post_detail' post.id %}">
           <h5 class="card-title">{{ post.title }}</h5>
         </a>
-        <p class="card-text post-data">投稿日: {{ post.published_at|date }}</p>
+        <p class="card-text post-data"><img src="{% static '/blog/img/time.svg' %}"> {{ post.published_at|date }}</p>
         <a href="{% url 'blog:post_detail' post.id %}" class="btn btn-primary">記事を読む</a>
       </div>
     </div>

@@ -8,7 +8,7 @@
     <main class="col-md-8">
       <article class="blog-area">
         <h1 class="post-title">{{ object.title }}</h1>
-        <p>投稿日: {{ object.published_at|date }}</p>
+        <p><img src="{% static '/blog/img/time.svg' %}">{{ object.published_at|date }}</p>
         <p>カテゴリ: {{ object.category.name }}</p>
         {% for tag in object.tags.all %}
         <h6>{{ tag.name }}</h6>
