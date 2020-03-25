@@ -22,144 +22,56 @@
         <ul>
           <li id="menu-item-11569"
               class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-11569">
-            <a href="https://www.webcreatorbox.com/category/tech" sl-processed="1">コーディング</a>
-            <ul class="sub-menu">
-              <li id="menu-item-11574"
-                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11574">
-                <a href="/tag/css/" sl-processed="1">CSS</a></li>
-              <li id="menu-item-11575"
-                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11575">
-                <a href="/tag/html5/" sl-processed="1">HTML5</a></li>
-              <li id="menu-item-11576"
-                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11576">
-                <a href="/tag/wordpress/" sl-processed="1">WordPress</a></li>
-              <li id="menu-item-11577"
-                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11577">
-                <a href="/tag/jquery/" sl-processed="1">jQuery</a></li>
-              <li id="menu-item-11573"
-                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11573">
-                <a href="/tag/svg/" sl-processed="1">SVG</a></li>
-              <li id="menu-item-11578"
-                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11578">
-                <a href="/tag/smartphone/" sl-processed="1">スマートフォン</a></li>
+            <a href="#" sl-processed="1">カテゴリ</a>
+            <ul class="">
+              {% for category in categories|dictsort:"id" %}
+              <li class="">
+                <a href="{% url 'blog:category_post' category.slug %}" class="">{{ category.name }}</a>
+              </li>
+              {% endfor %}
             </ul>
-            <span class="touch-button"><svg class="navicon"><use xlink:href="#arrow-bottom"></use></svg></span></li>
+            <!--            <span class="touch-button"><svg class="navicon"><use xlink:href="#arrow-bottom"></use></svg></span></li>-->
           <li id="menu-item-11570"
               class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-11570">
-            <a href="https://www.webcreatorbox.com/category/inspiration" sl-processed="1">デザイン</a>
-            <ul class="sub-menu">
-              <li id="menu-item-11579"
-                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11579">
-                <a href="/tag/webdesign/" sl-processed="1">Webデザイン</a></li>
-              <li id="menu-item-11580"
-                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11580">
-                <a href="/tag/font/" sl-processed="1">フォント</a></li>
-              <li id="menu-item-11581"
-                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11581">
-                <a href="/tag/colour/" sl-processed="1">色彩</a></li>
-              <li id="menu-item-11582"
-                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11582">
-                <a href="/tag/business-card/" sl-processed="1">名刺</a></li>
-              <li id="menu-item-11583"
-                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11583">
-                <a href="/tag/photoshop/" sl-processed="1">Photoshop</a></li>
-              <li id="menu-item-11584"
-                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11584">
-                <a href="/tag/illustrator/" sl-processed="1">Illustrator</a></li>
+            <a href="#" sl-processed="1">タブ</a>
+            <ul id="target" class="sub-menu">
+              {% for tag in tags|dictsortreversed:"num_posts"|slice:"" %}
+              <li>
+                <a href="{% url 'blog:tag_post' tag.slug %}" class="card-link">{{ tag.name }}</a>
+              </li>
+              {% endfor %}
             </ul>
-            <span class="touch-button"><svg class="navicon"><use xlink:href="#arrow-bottom"></use></svg></span></li>
-          <li id="menu-item-11572"
-              class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-11572">
-            <a href="https://www.webcreatorbox.com/category/webinfo" sl-processed="1">制作お役立ち</a>
-            <ul class="sub-menu">
-              <li id="menu-item-11585"
-                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11585">
-                <a href="/tag/tool/" sl-processed="1">便利ツール</a></li>
-              <li id="menu-item-11586"
-                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11586">
-                <a href="/tag/download/" sl-processed="1">ダウンロード</a></li>
-              <li id="menu-item-11587"
-                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11587">
-                <a href="/tag/freelance/" sl-processed="1">フリーランス</a></li>
-              <li id="menu-item-11588"
-                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11588">
-                <a href="/tag/overseas/" sl-processed="1">海外情報</a></li>
-              <li id="menu-item-11589"
-                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11589">
-                <a href="/tag/english/" sl-processed="1">英語</a></li>
-            </ul>
-            <span class="touch-button"><svg class="navicon"><use xlink:href="#arrow-bottom"></use></svg></span></li>
-          <li id="menu-item-15696" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15696"><a
-            href="/gallery" sl-processed="1">ギャラリー</a></li>
-          <li id="menu-item-14246" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14246"><a
-            href="/coupon" sl-processed="1">クーポン</a></li>
-          <li><a href="https://www.webcreatorbox.com/en?s=" sl-processed="1">English</a></li>
+            <!--            <span class="touch-button"><svg class="navicon"><use xlink:href="#arrow-bottom"></use></svg></span></li>-->
         </ul>
       </nav>
-      <div class="social-nav">
-        <ul>
-          <li>
-            <svg>
-              <title>RSS</title>
-              <a xlink:href="https://www.webcreatorbox.com/feed">
-                <use xlink:href="#social-rss"></use>
-              </a>
-            </svg>
-          </li>
-          <li>
-            <svg class="social-twitter-fill">
-              <title>Twitter</title>
-              <a xlink:href="https://twitter.com/webcreatorbox/">
-                <use xlink:href="#social-twitter"></use>
-              </a>
-            </svg>
-          </li>
-          <li>
-            <svg class="social-facebook-fill">
-              <title>Facebook</title>
-              <a xlink:href="https://facebook.com/webcreatorbox.fb/">
-                <use xlink:href="#social-facebook"></use>
-              </a>
-            </svg>
-          </li>
-        </ul>
-      </div><!-- /.social-nav -->
+<!--      <div class="social-nav">-->
+<!--        <ul>-->
+<!--          <li>-->
+<!--            <svg>-->
+<!--              <title>RSS</title>-->
+<!--              <a xlink:href="https://www.webcreatorbox.com/feed">-->
+<!--                <use xlink:href="#social-rss"></use>-->
+<!--              </a>-->
+<!--            </svg>-->
+<!--          </li>-->
+<!--          <li>-->
+<!--            <svg class="social-twitter-fill">-->
+<!--              <title>Twitter</title>-->
+<!--              <a xlink:href="https://twitter.com/webcreatorbox/">-->
+<!--                <use xlink:href="#social-twitter"></use>-->
+<!--              </a>-->
+<!--            </svg>-->
+<!--          </li>-->
+<!--          <li>-->
+<!--            <svg class="social-facebook-fill">-->
+<!--              <title>Facebook</title>-->
+<!--              <a xlink:href="https://facebook.com/webcreatorbox.fb/">-->
+<!--                <use xlink:href="#social-facebook"></use>-->
+<!--              </a>-->
+<!--            </svg>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </div>&lt;!&ndash; /.social-nav &ndash;&gt;-->
     </div><!-- /.flexnav -->
   </header>
 </div>
-
-
-<!-- templates/base/navbar.html-->
-<!--<nav class="navbar navbar-expand-lg navbar-light bg-light mb-4" role="navigation">-->
-<!--  <a class="navbar-brand" href="/">MyBlog</a>-->
-<!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"-->
-<!--          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
-<!--    <span class="navbar-toggler-icon"></span>-->
-<!--  </button>-->
-
-<!--  <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
-<!--    <ul class="navbar-nav mr-auto">-->
-<!--      <li class="nav-item active">-->
-<!--        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
-<!--      </li>-->
-<!--      <li class="nav-item">-->
-<!--        <a class="nav-link" href="#">Link</a>-->
-<!--      </li>-->
-<!--      <li class="nav-item dropdown">-->
-<!--        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"-->
-<!--           aria-haspopup="true" aria-expanded="false">-->
-<!--          Dropdown-->
-<!--        </a>-->
-<!--        <div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
-<!--          <a class="dropdown-item" href="#">Action</a>-->
-<!--          <a class="dropdown-item" href="#">Another action</a>-->
-<!--          <div class="dropdown-divider"></div>-->
-<!--          <a class="dropdown-item" href="#">Something else here</a>-->
-<!--        </div>-->
-<!--      </li>-->
-<!--      <li class="nav-item">-->
-<!--        <a class="nav-link disabled" href="#">Disabled</a>-->
-<!--      </li>-->
-<!--    </ul>-->
-<!--  </div>-->
-<!--</nav>-->
