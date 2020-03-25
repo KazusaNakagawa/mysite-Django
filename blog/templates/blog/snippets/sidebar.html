@@ -12,7 +12,6 @@
   </section>
   <section>
     <h1>タグ</h1>
-
     <ul>
       {% for tag in tags|dictsortreversed:"num_posts"|slice:":5" %}
       <li>
@@ -30,6 +29,5 @@
       {% endfor %}
     </ul>
     <p onclick="changeDisplay();">もっと見る</p>
-    <p>{{ num_posts }}</p>
   </section>
 </div>

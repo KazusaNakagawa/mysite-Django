@@ -34,8 +34,8 @@
           <li id="menu-item-11570"
               class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-11570">
             <a href="#" sl-processed="1">タブ</a>
-            <ul id="target" class="sub-menu">
-              {% for tag in tags|dictsortreversed:"num_posts"|slice:"" %}
+            <ul id="" class="sub-menu">
+              {% for tag in tags|dictsortreversed:"num_posts" %}
               <li>
                 <a href="{% url 'blog:tag_post' tag.slug %}" class="card-link">{{ tag.name }}</a>
               </li>
