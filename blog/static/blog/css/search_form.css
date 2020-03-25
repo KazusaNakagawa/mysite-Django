@@ -2,8 +2,9 @@
  search bar
 ******************************/
 input {
-  display:none;
+  /*display:none;*/
 }
 .my-search {
   margin-left: 0.5rem;
 }
+.hidden { display: none; }

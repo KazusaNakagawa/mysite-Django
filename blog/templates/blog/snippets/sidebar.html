@@ -21,8 +21,15 @@
       </li>
       {% endfor %}
     </ul>
-    <div class="">
-      <a href="{% url 'blog:tag_list' %}" class="">すべてのタグを見る</a>
-    </div>
+    <ul id="target" class="hidden">
+      {% for tag in tags|dictsortreversed:"num_posts"|slice:"5:" %}
+      <li>
+        <a href="{% url 'blog:tag_post' tag.slug %}" class="card-link">{{ tag.name }}</a>
+        <span>{{ tag.num_posts }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+    <p onclick="changeDisplay();">もっと見る</p>
+    <p>{{ num_posts }}</p>
   </section>
 </div>
