@@ -55,6 +55,7 @@ class CategoryPostView(ListView):
 class TagPostView(ListView):
     model = Post
     template_name = 'blog/tag_post.html'
+    paginate_by = 3
 
     def get_queryset(self):
         tag_slug = self.kwargs['tag_slug']
