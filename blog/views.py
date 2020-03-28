@@ -39,6 +39,7 @@ class TagListView(ListView):
 class CategoryPostView(ListView):
     model = Post
     template_name = 'blog/category_post.html'
+    paginate_by = 5
 
     def get_queryset(self):
         category_slug = self.kwargs['category_slug']
@@ -55,7 +56,7 @@ class CategoryPostView(ListView):
 class TagPostView(ListView):
     model = Post
     template_name = 'blog/tag_post.html'
-    paginate_by = 3
+    paginate_by = 5
 
     def get_queryset(self):
         tag_slug = self.kwargs['tag_slug']
@@ -73,7 +74,7 @@ class SearchPostView(ListView):
     """ Search function """
     model = Post
     template_name = 'blog/search_post.html'
-    paginate_by = 3
+    paginate_by = 5
 
     def get_queryset(self):
         query = self.request.GET.get('q', None)
