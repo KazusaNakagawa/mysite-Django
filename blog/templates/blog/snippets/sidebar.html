@@ -1,33 +1,20 @@
-<div id="side">
+<div id="side" class="">
   <section>
     <h1 class="">カテゴリ</h1>
-    <ul class="">
+    <ul>
       {% for category in categories|dictsort:"id" %}
       <li class="">
-        <a href="{% url 'blog:category_post' category.slug %}" class="">{{ category.name }}</a>
-        <span class="badge badge-primary badge-poll">{{ category.num_posts }}</span>
+        <a href="{% url 'blog:category_post' category.slug %}" class=side-tag>
+          {{ category.name }} ({{ category.num_posts }})</a>
       </li>
       {% endfor %}
     </ul>
   </section>
   <section>
     <h1>タグ</h1>
-    <ul>
-      {% for tag in tags|dictsortreversed:"num_posts"|slice:":5" %}
-      <li>
-        <a href="{% url 'blog:tag_post' tag.slug %}" class="card-link">{{ tag.name }}</a>
-        <span class="">{{ tag.num_posts }}</span>
-      </li>
-      {% endfor %}
-    </ul>
-    <ul id="target" class="hidden">
-      {% for tag in tags|dictsortreversed:"num_posts"|slice:"5:" %}
-      <li>
-        <a href="{% url 'blog:tag_post' tag.slug %}" class="card-link">{{ tag.name }}</a>
-        <span>{{ tag.num_posts }}</span>
-      </li>
-      {% endfor %}
-    </ul>
-    <p onclick="changeDisplay();">もっと見る</p>
+    {% for tag in tags|dictsortreversed:"num_posts"|slice:"" %}
+    <a href="{% url 'blog:tag_post' tag.slug %}" class="side-tag">
+      <img src="/static/blog/img/tag.svg"> {{ tag.name }} ({{ tag.num_posts }})</a>
+    {% endfor %}
   </section>
 </div>
