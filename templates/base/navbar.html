@@ -9,39 +9,47 @@
       <svg>
         <use xlink:href="#btn-menu"></use>
       </svg>
-      メニュー
     </div>
-    <div class="flexnav">
-      <div class="color-mode">
-        <p>ダークモード</p>
-        <input id="btn-mode" type="checkbox">
-        <label for="btn-mode" class="btn-switch"></label>
-        {% include "blog/snippets/search_form.html" %}
-      </div>
-      <nav role="navigation">
-        <ul>
-          <li id="menu-item-11569"
-              class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-11569">
-            <a href="#" sl-processed="1">カテゴリ</a>
-            <ul class="">
-              {% for category in categories|dictsort:"id" %}
-              <li class="">
-                <a href="{% url 'blog:category_post' category.slug %}" class="">{{ category.name }}</a>
-              </li>
-              {% endfor %}
-            </ul>
-            <!--            <span class="touch-button"><svg class="navicon"><use xlink:href="#arrow-bottom"></use></svg></span></li>-->
-          <li id="menu-item-11570"
-              class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-11570">
-            <a href="#" sl-processed="1">タブ</a>
-            <ul id="" class="sub-menu">
-              {% for tag in tags|dictsortreversed:"num_posts" %}
-              <li>
-                <a href="{% url 'blog:tag_post' tag.slug %}" class="card-link">{{ tag.name }}</a>
-              </li>
-              {% endfor %}
-            </ul>
-            <!--            <span class="touch-button"><svg class="navicon"><use xlink:href="#arrow-bottom"></use></svg></span></li>-->
+<!--      <nav class="navbar navbar-expand-lg navbar navbar-dark" style="background-color:#000;">-->
+    <nav class="navbar navbar-expand-lg navbar navbar-dark">
+<!--      <a class="navbar-brand" href="/">My blog</a>-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+<!--              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#000;">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+          <li>
+            <div class="flexnav">
+              <div class="color-mode">
+                <p>ダークモード</p>
+                <input id="btn-mode" type="checkbox">
+                <label for="btn-mode" class="btn-switch"></label>
+              </div>
+            </div><!-- /.flexnav -->
+          </li>
         </ul>
       </nav>
 <!--      <div class="social-nav">-->
@@ -74,4 +82,4 @@
 <!--      </div>&lt;!&ndash; /.social-nav &ndash;&gt;-->
     </div><!-- /.flexnav -->
   </header>
-</div>
+</div><!-- container -->
