@@ -84,10 +84,9 @@ a {
     padding-bottom: 1rem;
     padding-top: 1rem;
 }
-footer {
-  margin-top: 7rem;
-  margin-bottom: 3rem;
-}
+/***********************
+ card
+***********************/
 .card {
     /* position: relative; */
     display: -ms-flexbox;
@@ -101,4 +100,17 @@ footer {
     border: #96afaf99;
     /* border-radius: .25rem; */
     border-bottom-style: dotted;
+}
+/***********************
+ comment
+***********************/
+.comment-area {
+  margin-top: 6rem;
+}
+/***********************
+ footer
+***********************/
+footer {
+  margin-top: 7rem;
+  margin-bottom: 3rem;
 }
