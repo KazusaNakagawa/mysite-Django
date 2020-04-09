@@ -3,13 +3,20 @@
 {% block content %}
 <div class="container">
   <div class="row">
+
     <main class="col-md-8">
       <h1 class="mb-4 main-top">「{{ category.name }}」の投稿一覧</h1>
+      <!--      {% if user.is_authenticated or post.is_public %}-->
       <p class="text-right">{{ page_obj.start_index }}-{{ page_obj.end_index }}件（{{ paginator.count }}件）</p>
+      <!--       {% endif %}-->
       {% include "blog/snippets/main_post_list.html" %}
       {% include "blog/snippets/pagination.html" %}
+
     </main>
     {% include "blog/snippets/sidebar.html" %}
   </div>
 </div>
+<footer>
+  {% include "blog/snippets/footer.html" %}
+</footer>
 {% endblock %}

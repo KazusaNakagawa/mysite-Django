@@ -4,12 +4,15 @@
 :root {
   --main-text: #333;
   --main-bg: #fff;
-  --dark-bg: #15202B;
+  --dark-bg: #000;
 }
 @media (prefers-color-scheme: dark) {
   :root {
     --main-text: #ddd;
     --main-bg: #000;
+  }
+  .post-line {
+    background: none;
   }
 }
 
@@ -62,18 +65,11 @@ h1, p {
 a {
   color: #0bd
 }
-.btn {
-  background: #0bd;
-  padding: 6px 20px;
-  border-radius: 5px;
-  display: inline-block;
-  color: #fff;
-  text-decoration: none;
-}
+
 
 .card-body {
-  background-color: var(--dark-bg);
-  color: #E8E8E8;
+  /*background-color: var(--dark-bg);*/
+  color: #000;
 }
 
 .card-header {

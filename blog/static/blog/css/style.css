@@ -401,7 +401,14 @@ img {
     .flexnav li {
       margin-right:40px
     }
-    .flexnav li a{font-size:1.25rem;line-height:1.5}article header h1{padding:0 0 30px}article header .post_meta{margin:10px 0}article .attachment-small-thumbnail{width:200px;height:160px}footer{padding:40px 0 30px}footer ul{margin-bottom:20px}}
+    .flexnav li a{font-size:1.25rem;line-height:1.5}article header h1{padding:0 0 30px}article header .post_meta{margin:10px 0}article .attachment-small-thumbnail{width:200px;height:160px}
+    footer {
+      padding:40px 0 30px
+    }
+    footer ul {
+      margin-bottom:20px
+    }
+  }
 
 
 @media (min-width: 1080px)
