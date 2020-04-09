@@ -39,7 +39,7 @@ body {
 
 
 .form-control {
-    background-color: #212020;
+    background-color: #ddd;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
@@ -49,11 +49,11 @@ body {
   font-family: 'Playfair Display', serif;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-top: 2rem;
 }
 p {
-  font-size: 1.5rem;
+  font-size: 1.0rem;
   line-height: 1.5;
 }
 h1, p {
