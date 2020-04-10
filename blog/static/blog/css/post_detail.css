@@ -6,16 +6,40 @@
     border-left: 9px solid #5fa0da78;
     margin-top: 3.5em;
 }*/
-/* title */
+/***********************
+ title
+***********************/
 .post-title {
   margin-top: 2rem;
 }
+.post-title {
+  position: relative;
+  display: inline-block;
+  padding: 15px 60px;
+}
+.post-title:before, .post-title:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 44px;
+  height: 2px;
+  background-color: #0bd;
+  -webkit-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+}
+.post-title:before {
+  left:0;
+}
+.post-title:after {
+  right: 0;
+}
 
-* {
+/** {
     font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", Hiragino Kaku Gothic Pro, "ＭＳ Ｐゴシック", sans-serif;
     margin: 0px;
     padding: 0px;
-}
+}*/
 
 entry-title, .post .entry-title {
     font-size: 22px;
