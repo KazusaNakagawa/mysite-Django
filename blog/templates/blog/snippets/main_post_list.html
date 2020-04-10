@@ -17,8 +17,8 @@
       {% if not post.is_public %}
       <h5><span class="badge badge-secondary">下書き</span></h5>
       {% endif %}
-      <a href="{% url 'blog:post_detail' post.id %}">
-        <h3 class="card-title">{{ post.title }}</h3>
+      <a class="b-keep" href="{% url 'blog:post_detail' post.id %}">
+        <p>{{ post.title }}</p>
       </a>
       <p class="card-text post-data"><img src="{% static '/blog/img/time.svg' %}"> {{ post.published_at|date }}</p>
     </div>
