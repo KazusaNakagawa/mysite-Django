@@ -1,8 +1,6 @@
 {% load static %}
-<form class="form-inline my-3 my-lg-0 my-search" action="{% url 'blog:search_post' %}" method="GET">
-    <input class="form-control mr-sm-2 search" type="search" name="q" value="{{ request.GET.q }}"
-           placeholder="キーワード検索"
-           aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-        <img src="{% static '/blog/img/search.svg' %}"></button>
+
+<form id="formbox" action="{% url 'blog:search_post' %}" method="get">
+  <input id="kwbox" type="search" name="q" value="{{ request.GET.q }}" placeholder="search">
+  <button type="submit" id="knbtn"><img src="{% static '/blog/img/search.svg' %}"></button>
 </form>
