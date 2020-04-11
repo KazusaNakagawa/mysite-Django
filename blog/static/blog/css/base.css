@@ -7,6 +7,12 @@
 .btn-img {
   margin-left: 2rem
 }
+.light-theme #header a {
+  color: var(--main-text);
+}
+.dark-theme #header a {
+  color: #ddd
+}
 
 @media screen and (min-width:960px) and (max-width:1279px) {
   .logo h1 {
@@ -146,6 +152,10 @@ footer {
   position: absolute;
   float: none;
   background: #333;
+}
+.light-theme .navbar-nav .dropdown-menu {
+  color: var(--main-text);
+  background-color: #fff
 }
 #dropdown-menu {
   margin-left: 1rem
