@@ -4,15 +4,10 @@
 #header a {
   text-decoration: none;
   font-weight: bold;
+  color: #ddd
 }
 .btn-img {
   margin-left: 2rem
-}
-.light-theme #header a {
-  color: var(--main-text);
-}
-.dark-theme #header a {
-  color: #ddd
 }
 
 @media screen and (min-width:960px) and (max-width:1279px) {
@@ -125,7 +120,10 @@ a.side-tag {
 ***********************/
 footer {
   margin-top: 7rem;
-  margin-bottom: 3rem;
+}
+#footer {
+ margin: 1rem;
+
 }
 /***********************
  nav
@@ -156,7 +154,6 @@ footer {
 }
 .light-theme .navbar-nav .dropdown-menu {
   color: var(--main-text);
-  background-color: #fff;
   font-weight:bold;
 }
 #dropdown-menu {
@@ -167,3 +164,18 @@ footer {
   padding-bottom: 1rem;
   line-height: 2.0rem;
 }
+/***********************
+ header footer wide
+***********************/
+html, body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+header, footer {
+  background-color: #333
+}
+
