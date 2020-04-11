@@ -316,10 +316,6 @@ article:first-child {
   top:-60px;
   right:0
 }
-#header {
-  border-bottom:2px var(--sub-grey) solid;
-  /*height:180px*/
-}
 .flexnav {
   overflow:visible;
   position:relative
@@ -421,9 +417,6 @@ article:first-child {
     padding:15px
   }
   @media (min-width: 1080px) {
-    #header {
-      /*height:230px*/
-    }
     .flexnav li {
       margin-right:40px
     }
