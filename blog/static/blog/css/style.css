@@ -212,7 +212,36 @@ img {
   position: absolute;
   width:40px;
   background: #f6f6f6;
-  left:0;transition:.5s}.new-nav-item{display:none}.page-attribute{margin-bottom:-80px}.single article{margin:0}article{margin:130px 0}article:first-child{margin-top:0}article header{margin-bottom:15px}article header .post_meta{overflow:hidden;margin:5px 0;padding:0}article header .post_meta li{font-size:.75rem;line-height:1.3;margin-right:20px;float:left;text-indent:0}article header .post_meta li:before{display:none}article header .post_meta li svg{width:15px;height:15px;fill:var(--grey);position:relative;top:2px;margin-right:3px}article .more-link{float:right;margin-top:15px}article .more-link svg{width:15px;height:11px;fill:#0bd}article .more-link:hover svg{fill:#0090aa}article a.article-title{color:var(--main-text)}article a.article-title:hover{color:var(--grey);text-decoration:none}article h1{font-weight:bold;font-size:1.125rem;line-height:1.4;background:url(images/bg_line.svg) no-repeat right bottom;padding:0 0 25px;clear:both}@media (prefers-color-scheme: dark){article h1{background:url(images/bg_line-dark.svg) no-repeat right bottom}}article h2,article h3,article h4,article h5{margin:40px 0 10px;font-weight:bold}article h2 a,article h3 a,article h4 a,article h5 a{color:var(--main-text) !important}article h2{font-size:1.125rem;line-height:1.4;background:url(images/sprite.svg) no-repeat;background-size:302px 900px;background-position:0 -200px;border-bottom:3px #0bd solid;padding:10px 0 8px 25px;margin-bottom:15px}article h3{font-size:1.125rem;line-height:1.4}article p{margin-bottom:20px}article p.overflow{overflow:hidden}article p.small{font-size:.75rem;line-height:1.3}article p.wp-caption-text{margin:10px 0 35px}article p.red{color:#c00}article em{font-style:italic}article strong{font-weight:bold}article code{color:#009;font-family:"Courier New",Courier,monospace;background:#eee;border-radius:3px;padding:1px 4px}article .end{margin-top:40px}article .wp-caption{width:100% !important}article blockquote{background:url(images/sprite.svg) no-repeat;background-size:302px 900px;background-position:15px -790px;background-color:#eee;padding:20px 20px 0 75px;margin:25px 0;overflow:hidden}@media (prefers-color-scheme: dark){article blockquote{background-color:#666}}article ol{margin:20px 0 25px 25px;padding-left:15px}article ol li{list-style:outside decimal;margin:5px 0}article ul{margin:20px 0 25px 25px;padding-left:15px}article ul li{text-indent:-.4rem;margin:5px 0}article ul li:before{content:'';width:6px;height:6px;background:#0bd;position:relative;left:-15px;top:-3px;display:inline-block}article .attachment-small-thumbnail{margin:0 20px 20px 0;float:left
+  left:0;
+  transition:.5s
+}
+.new-nav-item {
+  display:none
+}
+.page-attribute {
+  margin-bottom:-80px
+}
+.single article {
+  margin:0
+}
+article {
+  margin:130px 0
+}
+article:first-child {
+  margin-top:0
+}article header {
+  margin-bottom:15px
+}article header .post_meta {
+  overflow:hidden;
+  margin:5px 0;
+  padding:0
+}article header .post_meta li {
+  font-size:.75rem;
+  line-height:1.3;
+  margin-right:20px;
+  float:left;
+  text-indent:0
+}article header .post_meta li:before{display:none}article header .post_meta li svg{width:15px;height:15px;fill:var(--grey);position:relative;top:2px;margin-right:3px}article .more-link{float:right;margin-top:15px}article .more-link svg{width:15px;height:11px;fill:#0bd}article .more-link:hover svg{fill:#0090aa}article a.article-title{color:var(--main-text)}article a.article-title:hover{color:var(--grey);text-decoration:none}article h1{font-weight:bold;font-size:1.125rem;line-height:1.4;background:url(images/bg_line.svg) no-repeat right bottom;padding:0 0 25px;clear:both}@media (prefers-color-scheme: dark){article h1{background:url(images/bg_line-dark.svg) no-repeat right bottom}}article h2,article h3,article h4,article h5{margin:40px 0 10px;font-weight:bold}article h2 a,article h3 a,article h4 a,article h5 a{color:var(--main-text) !important}article h2{font-size:1.125rem;line-height:1.4;background:url(images/sprite.svg) no-repeat;background-size:302px 900px;background-position:0 -200px;border-bottom:3px #0bd solid;padding:10px 0 8px 25px;margin-bottom:15px}article h3{font-size:1.125rem;line-height:1.4}article p{margin-bottom:20px}article p.overflow{overflow:hidden}article p.small{font-size:.75rem;line-height:1.3}article p.wp-caption-text{margin:10px 0 35px}article p.red{color:#c00}article em{font-style:italic}article strong{font-weight:bold}article code{color:#009;font-family:"Courier New",Courier,monospace;background:#eee;border-radius:3px;padding:1px 4px}article .end{margin-top:40px}article .wp-caption{width:100% !important}article blockquote{background:url(images/sprite.svg) no-repeat;background-size:302px 900px;background-position:15px -790px;background-color:#eee;padding:20px 20px 0 75px;margin:25px 0;overflow:hidden}@media (prefers-color-scheme: dark){article blockquote{background-color:#666}}article ol{margin:20px 0 25px 25px;padding-left:15px}article ol li{list-style:outside decimal;margin:5px 0}article ul{margin:20px 0 25px 25px;padding-left:15px}article ul li{text-indent:-.4rem;margin:5px 0}article ul li:before{content:'';width:6px;height:6px;background:#0bd;position:relative;left:-15px;top:-3px;display:inline-block}article .attachment-small-thumbnail{margin:0 20px 20px 0;float:left
   }
   article img,article video {
    /* margin:5px 0;*/
@@ -382,9 +411,6 @@ img {
     margin-left:100%;
     top:0
   }
-  .menu-button {
-  display:none
-  }
   .social-nav {
     float:right;
     margin-top:7%
@@ -481,14 +507,14 @@ html {
   /*padding: 0.3rem;
   border-radius: 36%;*/
   margin: 0.4rem;
-   border-radius: 4px;
-    padding: 0 8px 0 16px;
-    height: 30px;
-    line-height: 26px;
-    border-radius: 4px;
-    font-size: 14px;
-    background: #388ba5ab;
-        margin: 0 10px 10px 0;
+  border-radius: 4px;
+  padding: 0 8px 0 16px;
+  height: 30px;
+  line-height: 26px;
+  border-radius: 4px;
+  font-size: 14px;
+  background: #388ba5ab;
+  margin: 0 10px 10px 0;
 }
 .side-tag:hover {
   color: #b3a9a9;
@@ -601,3 +627,4 @@ color: #ddd
     right: 10%
 }
 }
+

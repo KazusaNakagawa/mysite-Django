@@ -4,9 +4,20 @@
 #header a {
   text-decoration: none;
 }
-.logo h1 {
+.btn-img {
+  margin-left: 2rem
+}
+
+@media screen and (min-width:960px) and (max-width:1279px) {
+  .logo h1 {
   font-size: 2.0rem;
   margin: -2.5rem 3rem 2rem 9rem;
+  }
+}
+@media screen and (max-width: 320px) and (max-width: 478px)
+.logo h1 {
+    font-size: 2.0rem;
+    margin: -1.5rem 0rem 2rem 1rem;
 }
 .logo img {
   width: 3.3rem;
@@ -109,4 +120,3 @@ footer {
   margin-top: 7rem;
   margin-bottom: 3rem;
 }
-

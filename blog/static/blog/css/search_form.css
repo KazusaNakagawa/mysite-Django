@@ -13,62 +13,16 @@ input {
 .btn-search {
   background: none;
 }
-/*====================
-PCを基本設計にする
- - 1280px〜：大型PC
- - 960px〜1279px：小型PC
- - 600px〜959px：タブレット
- - 480px〜599px：スマートフォン横
- - 〜479px：スマートフォン縦
-====================*/
-/* 960px〜1279px：小型PC
------------------------------- */
-@media screen and (min-width:960px) and (max-width:1279px) {
-   #formbox {
-    margin-top: 5.5rem;
-    margin-right: 5.5rem;
-  }
+.menu-button {
+    display:none
 }
 
-/* 600px〜959px：タブレット
------------------------------- */
-@media screen and (min-width:600px) and (max-width:959px) {
-   #formbox {
-    margin-top: 0.5rem;
-    margin-right: 5.5rem;
-  }
-}
-/* 480px〜599px：SP横
------------------------------- */
-@media screen and (min-width:480px) and (max-width:599px) {
-   #formbox {
-    margin-top: 0.5rem;
-    margin-right: 5.5rem;
-  }
-}
-
-
-/* 〜479px：スマートフォン縦
------------------------------- */
-@media screen and (max-width:479px) {
-   #formbox {
-    margin-top: 0.5rem;
-    margin-right: 5.5rem;
-  }
-
-}
-@media (min-width: 900px){
-  #formbox {
-    margin-top: 5.5rem;
-    margin-right: 5.5rem;
-  }
-}
 #formbox {
     background: #ddd;
     outline: 0;
     border: none;
     width: fit-content;
-    margin-left: .75rem;
+    margin-right: 4.5rem;
     border-radius: 26px;
     float: right;
     position: ;
