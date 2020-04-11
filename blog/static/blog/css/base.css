@@ -160,3 +160,8 @@ footer {
 #dropdown-menu {
   margin-left: 1rem
 }
+.nav-items {
+  margin-left: 1rem;
+  padding-bottom: 1rem;
+  line-height: 2.0rem;
+}
