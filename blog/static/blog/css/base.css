@@ -3,6 +3,7 @@
 ***********************/
 #header a {
   text-decoration: none;
+  font-weight: bold;
 }
 .btn-img {
   margin-left: 2rem
@@ -155,7 +156,8 @@ footer {
 }
 .light-theme .navbar-nav .dropdown-menu {
   color: var(--main-text);
-  background-color: #fff
+  background-color: #fff;
+  font-weight:bold;
 }
 #dropdown-menu {
   margin-left: 1rem
