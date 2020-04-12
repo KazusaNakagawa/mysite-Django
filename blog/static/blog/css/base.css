@@ -200,4 +200,11 @@ html, body {
 header, footer {
   background-color: #333
 }
+/***********************
+ comment
+***********************/
+.comment {
+  margin: 2rem 1rem 0rem 0rem;
+}
+
 
