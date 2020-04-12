@@ -80,7 +80,6 @@ a.side-tag {
  button
 ***********************/
 .btn {
-  background: #0bd;
   padding: 6px 20px;
   border-radius: 5px;
   display: inline-block;
@@ -96,17 +95,11 @@ a.side-tag {
   opacity: 0.7;
 }
 .btn-primary {
-   background: #0bd;
   padding: 6px 20px;
   border-radius: 5px;
   display: inline-block;
   color: #fff;
   text-decoration: none;
-}
-.btn-primary {
-    color: #fff;
-    background-color: #0bd;
-    /* border-color: #007bff; */
 }
 .row {
     display: -ms-flexbox;
