@@ -16,27 +16,29 @@ input {
 .menu-button {
     display:none
 }
-
 #formbox {
-    background: #ddd;
-    outline: 0;
-    border: none;
-    width: fit-content;
-    margin-right: 4.5rem;
-    border-radius: 26px;
-    float: right;
-    position: ;
+  background: #ddd;
+  outline: 0;
+  border: none;
+  width: fit-content;
+  border-radius: 26px;
+  float: right;
 }
-
-
-
+@media screen and (min-width:479px) and (max-width:1279px) {
+  #formbox {
+    /*margin-right: 4.5rem;*/
+  }
+}
+@media screen and (max-width: 320px) and (max-width: 478px) {
+  #formbox {
+    margin-right: 0em;
+}
 #kwbox {
-    background: #ddd;
-    outline: 0;
-    border: none;
-    margin-bottom: .60rem;
-    margin-left: .75rem;
-
+  background: #ddd;
+  outline: 0;
+  border: none;
+  margin-bottom: .60rem;
+  margin-left: .75rem;
 }
 #knbtn {
   background: none;
