@@ -12,7 +12,7 @@
         <p>カテゴリ: {{ object.category.name }}</p>
         {% for tag in object.tags.all %}
         <a href="{% url 'blog:tag_post' tag.slug %}" class="side-tag">
-          <img src="/static/blog/img/tag.svg"> {{ tag.name }}</a>
+          #{{ tag.name }}</a>
         {% endfor %}
         <hr>
         {{ object.content|safe }}

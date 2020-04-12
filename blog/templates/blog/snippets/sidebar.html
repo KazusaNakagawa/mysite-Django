@@ -14,7 +14,7 @@
     <h1>タグ</h1>
     {% for tag in tags|dictsortreversed:"num_posts"|slice:"" %}
     <a href="{% url 'blog:tag_post' tag.slug %}" class="side-tag">
-      <img src="/static/blog/img/tag.svg"> {{ tag.name }} ({{ tag.num_posts }})</a>
+      #{{ tag.name }} ({{ tag.num_posts }})</a>
     {% endfor %}
   </section>
 </div>
