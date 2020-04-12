@@ -12,6 +12,10 @@ header {
 .btn-img {
   margin-left: 2rem
 }
+#mode {
+ color: #ddd
+}
+
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {
     -ms-flex-direction: row;
@@ -99,6 +103,9 @@ a.side-tag {
   border-radius: 5px;
   display: inline-block;
   color: #fff;
+  text-decoration: none;
+}
+a:hover {
   text-decoration: none;
 }
 .row {
