@@ -9,11 +9,15 @@ header {
   font-weight: bold;
   color: #ddd
 }
-.btn-img {
-  margin-left: 2rem
+#header a:hover{
+  color: #747a7d
 }
 #mode {
  color: #ddd
+}
+.btn-switch:hover {
+  color: #747a7d;
+  cursor: pointer
 }
 
 @media (min-width: 992px) {
@@ -145,7 +149,22 @@ footer {
 }
 #footer {
  margin: 1rem;
+ height: 5rem;
+ color: #ddd
+}
+#footer ul {
+   float:left;
+   position:relative;
+   left:50%;
+}
 
+#footer li {
+  position:relative;
+  left:-50%;
+  list-style-type: none;
+  border: #999 solid 1px;
+  margin: 0 0 10px 0;
+  padding: 10px 30px;
 }
 /***********************
  nav
