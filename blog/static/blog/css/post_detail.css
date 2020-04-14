@@ -54,21 +54,20 @@ entry-title, .post .entry-title {
 }
 
 /*@media print, screen and (min-width: 960px)*/
-h2.has-text-align-center {
+.has-text-align-center h2{
     padding: 30px 15px 5px;
     /*border-left: 9px solid #81b5e478;*/
     line-height: 40px;
 }
 /*@media print, screen and (min-width: 960px)*/
-h3.has-text-align-center {
+.has-text-align-center h3{
     font-size: 20px;
     line-height: 30px;
     border-left: 9px solid #81b5e478;
     margin-top: 3.5em;
 }
 
-h4.has-text-align-center {
-    background-color: #ffffff;
+.has-text-align-center h4 {
     font-size: 16px;
     line-height: 26px;
     border-left: 9px solid #5fa0da78;
@@ -76,7 +75,7 @@ h4.has-text-align-center {
 }
 
 /*@media print, screen and (min-width: 960px)*/
-h5.has-text-align-center {
+.has-text-align-center h5 {
     display: block;
     font-size: 0.83em;
     margin-block-start: 1.67em;

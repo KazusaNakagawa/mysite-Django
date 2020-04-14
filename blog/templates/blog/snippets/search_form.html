@@ -1,6 +1,7 @@
 {% load static %}
-
-<form id="formbox" action="{% url 'blog:search_post' %}" method="get">
-  <input id="kwbox" type="search" name="q" value="{{ request.GET.q }}" placeholder="search">
-  <button type="submit" id="knbtn"><img src="{% static '/blog/img/search.svg' %}"></button>
-</form>
+<div id="search">
+  <form id="formbox" action="{% url 'blog:search_post' %}" method="get">
+    <input id="kwbox" type="search" name="q" value="{{ request.GET.q }}" placeholder="search">
+    <button type="submit" id="knbtn"><img src="{% static '/blog/img/search.svg' %}"></button>
+  </form>
+</div>

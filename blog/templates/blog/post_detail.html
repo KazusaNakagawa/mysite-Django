@@ -15,7 +15,9 @@
           #{{ tag.name }}</a>
         {% endfor %}
         <hr>
-        {{ object.content|safe }}
+        <div class="has-text-align-center">
+          {{ object.content|safe }}
+        </div>
       </article>
       <article class="comment-area">
         <a class="btn-sm btn-primary" href="{% url 'blog:comment_form' post.pk %}">コメントを投稿する</a>
