@@ -80,6 +80,28 @@ header {
   #header, #navbar {
     margin: 1rem -4rem 1rem 0rem;
 　}
+  #side section {
+    margin-top: 4rem;
+    margin-left: .5rem;
+  }
+  #header a, #navbar a {
+    margin-left: .5rem;
+  }
+  .dropdown, .dropleft, .dropright, .dropup {
+    margin-bottom: 2rem;
+  }
+  header {
+    margin-bottom: 0rem;
+  }
+}
+.dropdown-menu p{
+  zoom:1;
+  overflow:hidden;
+  margin:1rem;
+}
+.dropdown-menu p{
+  margin-top:-1px;
+  border-bottom:1px dotted #666;
 }
 /***********************
  font

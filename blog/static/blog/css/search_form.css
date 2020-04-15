@@ -1,9 +1,6 @@
 /******************************
  search bar
 ******************************/
-input {
-  /*display:none;*/
-}
 .my-search {
   margin-left: 0.5rem;
 }
@@ -43,6 +40,6 @@ input {
 #knbtn {
   background: none;
   border: none;
-  margin-top: 0.6rem;
-  margin-right: 0.25rem;
+  margin-top: 0rem;
+  margin-right: 0rem;
 }
