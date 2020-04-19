@@ -7,9 +7,6 @@
 header {
   margin-bottom: 2rem
 }
-#header ul li {
-  display: inline;
-}
 #header ul{
     padding: 0px;
     margin: .75rem;
@@ -22,8 +19,9 @@ header {
     color: #fff;
 }
 #header ul li a:hover{
-    border-bottom: dotted 1px #fff;
+    /*border-bottom: dotted 1px #fff;*/
 }
+
 /***********************
 
 ***********************/
@@ -34,6 +32,10 @@ header {
 }
 #header a:hover, #navbar a:hover{
   color: #747a7d
+}
+/* title hover no color change */
+#title a:hover {
+  color: #ddd
 }
 #mode {
  color: #ddd;
