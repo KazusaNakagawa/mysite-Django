@@ -12,7 +12,7 @@ header {
 }
 #header ul{
     padding: 0px;
-    margin: 0px;
+    margin: .75rem;
 }
 #header ul li {
     display: inline;
@@ -66,6 +66,9 @@ header {
 @media screen and (min-width:479px) and (max-width:959px) {
    #header, #navbar {
     margin: 2rem 3rem 1rem 2rem;
+  }
+  #side section {
+    margin-left: 1rem;
   }
 }
 @media screen and (max-width: 320px) and (max-width: 478px) {
