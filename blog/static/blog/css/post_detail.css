@@ -94,3 +94,18 @@ pre {
     white-space: pre;
     margin: 1em 0px;
 }
+/* Posting sheet */
+@media (min-width: 768px) {
+  .col-md-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+    padding: 1.75rem
+  }
+  .dark-theme .col-md-8 {
+    background: #333;
+  }
+  .light-theme .col-md-8 {
+    background-color: #ddd;
+  }
+}
