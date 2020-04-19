@@ -1,7 +1,6 @@
 {% for post in object_list %}
 {% if user.is_authenticated or post.is_public %}
 {% load static %}
-
 <div class=" card mb-3 post-line">
   <div class="row no-gutters">
     <div class="col-md-4 my-auto">
@@ -10,7 +9,9 @@
         <img class="card-img-top" src="{{ post.image.url }}" alt="{{ post.title }}">
       </a>
       {% else %}
-      <img class="card-img-top" src="{% static '/blog/img/noimage.png' %}">
+      <a href="{% url 'blog:post_detail' post.id %}">
+        <img class="card-img-top" src="{% static '/blog/img/noimage.png' %}">
+      </a>
       {% endif %}
     </div><!-- col-md-4 my-auto -->
     <div class="col-md-8">
