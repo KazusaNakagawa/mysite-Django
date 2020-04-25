@@ -5,6 +5,8 @@
 <link rel="stylesheet" href="{% static 'blog/css/post_detail.css' %}">
 <div class="container">
   <div class="row">
+    <aside class="col-lg-2">
+    </aside>
     <main class="col-lg-8">
       <article class="blog-area">
         <h1 class="post-title">{{ object.title }}</h1>
@@ -24,6 +26,8 @@
         {% include "blog/snippets/comments.html" %}
       </article>
     </main>
+    <aside class="col-lg-2">
+    </aside>
   </div>
 </div>
 {% endblock %}
