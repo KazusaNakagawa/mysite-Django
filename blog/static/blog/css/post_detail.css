@@ -84,6 +84,9 @@ entry-title, .post .entry-title {
     margin-inline-end: 0px;
     font-weight: bold;
 }
+.has-text-align-center li {
+  padding: .5em
+}
 
 /*code style*/
 pre {
