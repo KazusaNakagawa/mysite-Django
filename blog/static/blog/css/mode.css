@@ -38,11 +38,9 @@ body {
   border: none
 }
 
-
-
-
+/* 投稿フォーム */
 .form-control {
-    background-color: #ddd;
+    background-color: #fff;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');

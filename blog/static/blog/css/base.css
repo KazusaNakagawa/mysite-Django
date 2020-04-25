@@ -281,3 +281,14 @@ header, footer {
 }
 
 
+.col-lg-8 {
+  padding: 2em
+}
+
+.light-theme .col-lg-8 {
+    background: #ddd;
+}
+.dark-theme .col-lg-8 {
+    background: #333;
+}
+

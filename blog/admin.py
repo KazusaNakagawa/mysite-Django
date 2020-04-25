@@ -10,6 +10,7 @@ class ContentImageInline(admin.TabularInline):
 
 
 class PostAdmin(admin.ModelAdmin):
+    # Image in post
     inlines = [
         ContentImageInline,
     ]
