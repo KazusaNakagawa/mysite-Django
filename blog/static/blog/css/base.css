@@ -38,9 +38,17 @@ header {
   color: #ddd
 }
 #mode {
- color: #ddd;
- float: right;
- margin-right: .75rem;
+  color: #ddd;
+  float: right;
+  position: relative;
+  left: .5em;
+  bottom: .1em;
+}
+.light-theme #mode::before {
+   content: "light ";
+}
+.dark-theme #mode::before {
+   content: "dark ";
 }
 .btn-switch:hover {
   color: #747a7d;
