@@ -75,6 +75,7 @@ entry-title, .post .entry-title {
     line-height: 30px;
     border-left: 9px solid #81b5e478;
     margin-top: 3.5em;
+    margin-bottom: .5em;
 }
 
 .has-text-align-center h4 {
@@ -118,6 +119,10 @@ pre {
     font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
     white-space: pre;
     margin: 1em 0px;
+}
+pre code {
+  position: relative;
+  left: .5em;
 }
 /* Posting sheet */
 @media (min-width: 768px) {
