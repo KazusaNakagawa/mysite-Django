@@ -1,7 +1,9 @@
 {% load static %}
-<div id="">
+<div class="search-box">
   <form action="{% url 'blog:search_post' %}" method="get">
     <input type="search" name="q" value="{{ request.GET.q }}" placeholder="search">
-<!--    <button type="submit"><img src="{% static '/blog/img/search.svg' %}"></button>-->
+    <button id="btn-search" type="submit">
+      <img src="{% static '/blog/img/search.svg' %}">
+    </button>
   </form>
 </div>
