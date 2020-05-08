@@ -50,15 +50,12 @@
 .search-box input[type=search], .search-box input[type=text] {
     padding: 4px 5px 6px 10px;
     border: 0;
-    border-radius: .5em .0em 0em .5em;
+    border-radius: 1em;
 }
 .search-box #btn-search {
-    position: fixed;
     height: 34px;
     vertical-align: top;
     cursor: pointer;
     background: none;
     border: none;
-    background-color: #fff;
-    border-radius: .0em .5em .5em .0em;
 }
