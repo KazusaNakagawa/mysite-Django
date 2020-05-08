@@ -22,7 +22,7 @@
         </div>
       </article>
       <article class="comment-area">
-        <a class="btn-sm btn-primary" href="{% url 'blog:comment_form' post.pk %}">コメントを投稿する</a>
+        <a class="btn-sm btn btn-outline-primary" href="{% url 'blog:comment_form' post.pk %}">コメントを投稿する</a>
         {% include "blog/snippets/comments.html" %}
       </article>
     </main>
