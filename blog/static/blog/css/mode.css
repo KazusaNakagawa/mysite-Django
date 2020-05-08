@@ -23,6 +23,7 @@ body {
 }
 .light-theme {
   background: #fff;
+  background-color: #61aab533;
   color: var(--main-text);
 }
 .dark-theme {
