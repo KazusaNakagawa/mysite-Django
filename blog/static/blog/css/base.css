@@ -4,9 +4,6 @@
 #title {
   font-size:2rem
 }
-header {
-  margin-bottom: 2rem
-}
 #header ul{
     padding: 0px;
     margin: .75rem;
@@ -201,6 +198,21 @@ a:hover {
 ***********************/
 .comment-area {
   margin-top: 3rem;
+}
+
+/***********************
+ breadcrumb
+***********************/
+.breadcrumb {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: .75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: none;
+    border-radius: .25rem;
 }
 /***********************
  footer

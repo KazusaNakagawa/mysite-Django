@@ -613,6 +613,32 @@ html {
   margin-right: 0.3rem;
 }
 /***********************
+ side category
+***********************/
+.side-category {
+    color: #ddd;
+    margin: 0.4rem;
+    border-radius: 4px;
+    padding: 5px 10px 5px 10px;
+    height: 30px;
+    line-height: 35px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 10px 10px 0;
+}
+.light-theme .side-category {
+    color: #555
+}
+.side-category:hover {
+  color: #b3a9a9;
+  text-decoration: none;
+}
+.side-category-li {
+  border-bottom: 1px dotted #666;
+  margin-top: .8em;
+}
+/***********************
  side tag
 ***********************/
 .side-tag {
