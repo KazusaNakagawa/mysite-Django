@@ -10,17 +10,20 @@
     <main class="col-lg-8">
       <article class="blog-area">
         <h1 class="post-title">{{ object.title }}</h1>
-        <p><img src="{% static '/blog/img/time.svg' %}">{{ object.published_at|date }}</p>
-        <p>カテゴリ: {{ object.category.name }}</p>
-        {% for tag in object.tags.all %}
-        <a href="{% url 'blog:tag_post' tag.slug %}" class="side-tag">
-          #{{ tag.name }}</a>
-        {% endfor %}
         <hr>
+        <ul id="post-data">
+          <li><img src="{% static '/blog/img/time.svg' %}">{{ object.published_at|date }}</li>
+          <li>{% for tag in object.tags.all %}
+            <a href="{% url 'blog:tag_post' tag.slug %}" class="side-tag">
+              #{{ tag.name }}</a>
+            {% endfor %}
+          </li>
+        </ul>
         <div class="has-text-align-center">
           {{ object.content|safe }}
         </div>
       </article>
+      <hr id="end-hr">
       <article class="comment-area">
         <a class="btn-sm btn btn-outline-primary" href="{% url 'blog:comment_form' post.pk %}">コメントを投稿する</a>
         {% include "blog/snippets/comments.html" %}

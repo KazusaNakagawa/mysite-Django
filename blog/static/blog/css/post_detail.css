@@ -26,7 +26,16 @@ entry-title, .post .entry-title {
     margin-bottom: 10px;
     font-weight: bold;
 }
+/***********************
+ post data
+***********************/
+#post-data li {
+  margin-bottom: .5em;
+}
 
+/***********************
+ font
+***********************/
 .post h2, .post h2 span, .post h3, .post h3 span, .entry-title, .post .entry-title {
     font-family: Helvetica , "游ゴシック" , "Yu Gothic" , sans-serif;
 }
