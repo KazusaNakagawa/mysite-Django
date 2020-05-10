@@ -1,0 +1,13 @@
+<!-- Start Breadcrumb -->
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb mb-1">
+    <li class="breadcrumb-item"><a href="/">ホーム</a></li>
+    {% for category in categories|dictsort:"id" %}
+    {% if category.name == object.category.name %}
+    <li class="breadcrumb-item"><a href="{% url 'blog:category_post' category.slug %}">{{ object.category.name }}</a></li>
+    {% endif %}
+    {% endfor %}
+    <li class="breadcrumb-item active" aria-current="page">{{ object.title }}</li>
+  </ol>
+</nav>
+<!-- End Breadcrumb -->
