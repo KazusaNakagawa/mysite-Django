@@ -11,29 +11,8 @@
 ***********************/
 .post-title {
   margin-top: 2rem;
-}
-.post-title {
-  position: relative;
   padding: 15px 60px;
 }
-.post-title:before, .post-title:after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  display: inline-block;
-  width: 44px;
-  height: 2px;
-  background-color: #0bd;
-  -webkit-transform: rotate(-60deg);
-  transform: rotate(-60deg);
-}
-.post-title:before {
-  left:0;
-}
-.post-title:after {
-  right: 0;
-}
-
 /** {
     font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", Hiragino Kaku Gothic Pro, "ＭＳ Ｐゴシック", sans-serif;
     margin: 0px;
@@ -53,15 +32,15 @@ entry-title, .post .entry-title {
 }
 
 .has-text-align-center h1{
-    padding: 0.7em .4em 0.2em;
+    padding: 0.5em 0.4em 0.2em;
     border-left: 7px solid #81b5e478;
     line-height: 20px;
     margin: 3em 0 1.5em;
-    border-bottom: 3px #0bd solid;
+    /* border-bottom: 3px #0bd solid;*/
 }
 /*@media print, screen and (min-width: 960px)*/
 .has-text-align-center h2{
-    padding: 0.7em .4em 0.2em;
+    padding: 0.4em .4em 0.2em;
     border-left: 7px solid #81b5e478;
     line-height: 20px;
     margin: 3em 0 1.5em;
@@ -137,4 +116,7 @@ pre code {
   .light-theme .col-md-8 {
     background-color: #ddd;
   }
+}
+#end-hr {
+  margin-top: 7rem;
 }

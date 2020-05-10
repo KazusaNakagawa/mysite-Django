@@ -200,7 +200,7 @@ a:hover {
  comment
 ***********************/
 .comment-area {
-  margin-top: 6rem;
+  margin-top: 3rem;
 }
 /***********************
  footer
@@ -252,7 +252,7 @@ footer {
 .navbar-nav .dropdown-menu {
   position: absolute;
   float: none;
-  background: #333;
+  background: #444;
 }
 .light-theme .navbar-nav .dropdown-menu {
   color: var(--main-text);
