@@ -274,7 +274,7 @@ footer {
   margin-left: 1rem
 }
 .nav-items {
-  margin-left: 1rem;
+  margin-left: 3rem;
   padding-bottom: 1rem;
   line-height: 2.0rem;
 }
@@ -301,6 +301,7 @@ header, footer {
 
 
 .col-lg-8 {
-  padding: 2em
+  padding: 2em;
+  background-color: #fff;
 }
 

@@ -29,6 +29,9 @@ entry-title, .post .entry-title {
 /***********************
  post data
 ***********************/
+#post-data {
+  margin-bottom: 5em;
+}
 #post-data li {
   margin-bottom: .5em;
 }
