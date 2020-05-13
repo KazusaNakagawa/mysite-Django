@@ -12,6 +12,7 @@
 .post-title {
   margin-top: 2rem;
   padding: 15px 20px 0;
+  font-weight: bold;
 }
 /** {
     font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", Hiragino Kaku Gothic Pro, "ＭＳ Ｐゴシック", sans-serif;
@@ -48,6 +49,7 @@ entry-title, .post .entry-title {
     border-left: 7px solid #81b5e478;
     line-height: 20px;
     margin: 3em 0 1.5em;
+    font-weight: bold;
     /* border-bottom: 3px #0bd solid;*/
 }
 /*@media print, screen and (min-width: 960px)*/
@@ -56,6 +58,8 @@ entry-title, .post .entry-title {
     border-left: 7px solid #81b5e478;
     line-height: 20px;
     margin: 3em 0 1.5em;
+　  font-weight: bold;
+
     /*border-bottom: 2px #0bd solid;*/
 }
 /*@media print, screen and (min-width: 960px)*/
@@ -66,6 +70,7 @@ entry-title, .post .entry-title {
     border-left: 9px solid #81b5e478;
     margin-top: 3.5em;
     margin-bottom: .5em;
+    font-weight: bold;
 }
 
 .has-text-align-center h4 {
@@ -74,6 +79,7 @@ entry-title, .post .entry-title {
     line-height: 26px;
     border-left: 9px solid #5fa0da78;
     margin-top: 3.5em;
+    font-weight: bold;
 }
 
 /*@media print, screen and (min-width: 960px)*/
@@ -97,10 +103,6 @@ entry-title, .post .entry-title {
     margin-inline-end: 0px;
     font-weight: bold;
 }
-.has-text-align-center li {
-  padding: .5em
-}
-
 /*code style*/
 pre {
     background-color: #eaeaea;
@@ -131,4 +133,46 @@ pre code {
 }
 #end-hr {
   margin-top: 7rem;
+}
+/***********************
+　Bullets
+***********************/
+
+.has-text-align-center li {
+  padding: .5em;
+}
+
+.has-text-align-center ol {
+  background: #f3fbff;
+  border: 2px skyblue dashed;
+}
+
+.has-text-align-center ol {
+  color: #3d424c;
+  border: dashed 2px #668ad8;
+  background: #f1f8ff;
+  padding: 0.5em 0.5em 0.5em 3em;
+  margin-bottom: 2em;
+}
+.has-text-align-center ul {
+  border: solid 2px #dfeef0;
+  padding: 0.5em 1em 0.5em 2.3em;
+  position: relative;
+}
+.has-text-align-center ul li {
+  position: relative;
+  padding-left: 15px;
+}
+.has-text-align-center ul li::after {
+  content: "";
+  position: absolute;
+  top: .7em;
+  left: 0;
+  -webkit-transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  transform: rotate(50deg);
+  width: 5px;
+  height: 10px;
+  border-right: 3px solid #c3dcf2;
+  border-bottom: 3px solid #c3dcf2;
 }
