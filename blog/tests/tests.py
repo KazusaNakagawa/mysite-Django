@@ -1,8 +1,8 @@
 from django.test import TestCase
 
 # from .models import Category
-from .models import Comment
-from .models import Post
+from blog.models import Comment
+from blog.models import Post
 
 
 # Create your tests here.
