@@ -211,8 +211,18 @@ a:hover {
     padding: .75rem 1rem;
     margin-bottom: 1rem;
     list-style: none;
-    background-color: #dfeef0;
+    background-color: #fff;
     border-radius: .25rem;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">" !important;
+  color: #ddd;
+}
+.breadcrumb-item a {
+  color: #6c757d;
+}
+.breadcrumb-item a:hover {
+    color: #333;
 }
 /***********************
  footer
@@ -290,7 +300,8 @@ body {
   padding: 0;
 }
 header, footer {
-  background-color: #333
+  background-color: #333;
+  margin-bottom: 1em;
 }
 /***********************
  comment
