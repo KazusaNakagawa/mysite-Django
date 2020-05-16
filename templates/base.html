@@ -6,12 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>{% block title %}Blog{% endblock %}</title>
   <meta name="description" content="{% block description %}{% endblock %}">
-　{% include "base/css.html" %}
-
+  {% include "base/css.html" %}
   <!--  <link rel="icon" href="{% static '/blog/img/logo.png' %}">-->
 
 </head>
-<body class="light-theme">
+<body>
 {% include "base/header.html" %}
 {% include "blog/snippets/breadcrumb.html" %}
 {% block content %}
