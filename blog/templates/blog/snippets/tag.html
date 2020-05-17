@@ -1,0 +1,7 @@
+  <section>
+    <h1>タグ</h1>
+    {% for tag in tags|dictsortreversed:"num_posts"|slice:"" %}
+    <a href="{% url 'blog:tag_post' tag.slug %}" class="side-tag">
+      #{{ tag.name }} ({{ tag.num_posts }})</a>
+    {% endfor %}
+  </section>

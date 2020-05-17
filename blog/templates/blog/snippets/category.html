@@ -1,0 +1,11 @@
+ <section>
+    <h1 class="">カテゴリ</h1>
+    <ul>
+      {% for category in categories|dictsort:"id" %}
+      <li class="side-category-li">
+        <a href="{% url 'blog:category_post' category.slug %}" class="side-category">
+          {{ category.name }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
