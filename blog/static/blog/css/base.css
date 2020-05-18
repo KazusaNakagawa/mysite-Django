@@ -158,6 +158,19 @@ a.side-tag {
   white-space: nowrap;
 }
 /***********************
+ side profile
+***********************/
+p#profile-name {
+  text-align: center;
+  font-weight: bold;
+}
+p#profile-note {
+  margin: 1em;
+  font-size: 14px;
+
+}
+
+/***********************
  button
 ***********************/
 .btn {
