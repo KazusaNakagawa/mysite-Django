@@ -205,6 +205,12 @@ a:hover {
     /* margin-right: -15px; */
     margin-left: -15px;
 }
+/***********************
+ post list
+***********************/
+#post-title {
+  font-size: large;
+}
 .no-gutters>.col, .no-gutters>[class*=col-] {
     padding-right: 1rem;
     padding-left: 1.5rem;
@@ -240,6 +246,7 @@ a:hover {
     list-style: none;
     background-color: #fff;
     border-radius: .25rem;
+    font-size: smaller;
 }
 .breadcrumb-item + .breadcrumb-item::before {
   content: ">" !important;
