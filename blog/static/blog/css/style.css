@@ -328,7 +328,15 @@ article:first-child {
   padding:16px 0 7px;
   margin-bottom:20px
 }
-#side .me{float:right;border:1px solid var(--grey);margin:0 0 10px 10px}#side .side-post-list li{margin-bottom:20px;line-height:1.4em;overflow:hidden;background:var(--main-bg)}#side .side-post-list img{float:left;margin:0 10px 0 0}#side .side-post-list .post-list-title{width:62%}footer{font-size:.75rem;line-height:1.3;clear:both;padding:40px 0 20px;text-align:center}footer ul{text-align:center;margin-bottom:10px}footer li{display:inline-block;margin:0 8px}footer a{color:#fff}footer small{color:rgba(255,255,255,0.7)
+#side .me{float:right;border:1px solid var(--grey);margin:0 0 10px 10px}#side .side-post-list li{margin-bottom:20px;line-height:1.4em;overflow:hidden;background:var(--main-bg)}#side .side-post-list img{float:left;margin:0 10px 0 0}#side .side-post-list .post-list-title{width:62%}footer{font-size:.75rem;line-height:1.3;clear:both;padding:40px 0 20px;text-align:center}
+footer li {
+  display: inline-block;
+  margin:0 8px
+}footer a {
+  color:#fff
+}
+footer small {
+  color:rgba(255,255,255,0.7)
 }
 
 @media (max-width: 400px) {
@@ -547,9 +555,6 @@ article h3{font-size:1.375rem}article h4{font-size:1.125rem;line-height:1.4}#sha
 .flexnav li a{font-size:1.25rem;line-height:1.5}article header h1{padding:0 0 30px}article header .post_meta{margin:10px 0}article .attachment-small-thumbnail{width:200px;height:160px}
 footer {
   padding:40px 0 30px
-}
-footer ul {
-  margin-bottom:20px
 }
 }
 @media (min-width: 1080px)
