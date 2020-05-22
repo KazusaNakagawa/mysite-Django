@@ -22,6 +22,8 @@
         <p id="post-title">{{ post.title }}</p>
       </a>
       <p class="card-text post-data"><img src="{% static '/blog/img/time.svg' %}"> {{ post.published_at|date }}</p>
+      <p class="post-headline">{{ post.content|safe|truncatechars:60 }}</p>
+
     </div>
   </div><!-- row no-gutters -->
 </div>
