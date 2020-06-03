@@ -17,7 +17,8 @@ db.sqlite3
 db.sqlite3-journal
 media
 back
-
+config.py
+log/
 
 
 # If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
